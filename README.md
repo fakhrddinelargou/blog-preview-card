@@ -92,4 +92,4 @@ This challenge is completely free. Please share it with anyone who will find it 
 
 **Have fun building!** 🚀
 
-<h2>Time</h2>:1H 15Min
+<h2>Time : 1H 15Min</h2>
