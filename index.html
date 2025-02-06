@@ -1,28 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="text-[62.5%]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css-style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css-style/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Blog preview card</title>
-</head>
-<body>
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray-500: hsl(0, 0%, 42%);
+    --color-gray-950: hsl(0, 0%, 7%);
+    --color-yellow: hsl(47, 88%, 63%);
 
-  <section class="card">
-      <img src="/assets/images/illustration-article.svg" alt="illustration-article" class="ill-image">
-        <span class="tag">Learning</span>
-         <time class="date">Published 21 Dec 2023</time>
-            <div class="title">HTML & CSS foundations</div>
-              <p class="paragraph">These languages are the backbone of every website, defining structure, content, and presentation.</p>
-                 <div class="profil"><img src="/assets/images/image-avatar.webp" alt="image-avatar"><a href="#">Greg Hooper</a></div>
+}
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  </section>
-
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Blog preview card</title>
+  </head>
+  <body
+    class="w-full h-screen flex items-center justify-center text-2xl font-medium bg-[var(--color-yellow)] text-[var(--color-gray-950)]"
+  >
+    <section
+      class="flex flex-col p-5 rounded-2xl shadow-[5px_5px_0px_1px_rgba(0,_0,_0,_0.8)] max-w-[85%] bg-[var(--color-white)] border-2 border-[var(--color-gray-950)] "
+    >
+      <img
+        src="/assets/images/illustration-article.svg"
+        alt="illustration-article"
+        class="rounded-2xl"
+      />
+      <span
+        class="self-start px-3 py-1.5 border-none font-bold rounded-md mt-6 mb-6 bg-[var(--color-yellow)]"
+        >Learning</span
+      >
+      <time>Published 21 Dec 2023</time>
+      <div class="mt-5 mb-5 text-4xl font-bold text-[var(--color-yellow)]">
+        HTML & CSS foundations
+      </div>
+      <p class="leading-[1.8] mb-6 max-w-xl text-[var(--color-gray-500)]">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <div class="flex items-center gap-[1rem]">
+        <img class="w-[3rem]" src="/assets/images/image-avatar.webp" alt="image-avatar" />
+        <a class="no-underline font-bold" href="#">Greg Hooper</a
+        >
+      </div>
+    </section>
+  </body>
 </html>
